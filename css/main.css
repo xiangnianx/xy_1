@@ -1,0 +1,282 @@
+.main{
+  height: 455px;
+  margin-left: 220px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.focus{
+  height: 100%;
+  width:720px;  
+  float: left;
+  background-color: yellow;
+}
+.newflash{
+  width: 250px;
+  height: 100%;
+  margin-left: 10px;
+  float: right;
+  background-color: #ffffff;
+  
+}
+.newflash .top{
+  height: 33px ;
+  line-height: 33px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #7d7d7d;
+  position: relative;
+  border:1px solid #e4e4e4;
+  border-bottom: 1px #7d7d7d dashed  ;
+}
+.newflash .more{
+  float: right;
+}
+.newflash .more::after{
+
+  content: "\e920";
+  font-family: icomoon;
+}
+
+.news{
+  height: 130px;
+  padding-left: 15px;
+  border:1px solid #e4e4e4;
+}
+.news ul>li{
+ height: 24px;
+ line-height: 24px;
+}
+.news ul>li>a{
+  white-space: nowrap;
+}
+
+.foo{
+  width: 100%;
+  height: 210px;
+  border:1px solid #e4e4e4;
+  border-top: none;
+  overflow: hidden;
+}
+.foo>ul{
+  width:260px;
+}
+.foo>ul>li{
+  float: left;
+  width: 63px;
+  height: 71px;
+  /* line-height: 71px; */
+  text-align: center;
+  border-right:1px solid #e4e4e4;
+  border-bottom:1px solid #e4e4e4;
+}
+.foo>ul>li:nth-of-type(2){
+  position: relative;
+}
+.foo>ul>li:nth-of-type(2)::after
+{
+  width: 15px;
+  height: 15px;
+  content: "";
+  background: url(../images/splice.png);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.foo>ul>li>i{
+  display: inline-block;
+  width: 24px;
+  height: 28px;
+  line-height: 28px;
+   margin-top: 12px;
+}
+.bottom{
+  height: 75px;
+  margin-top: 5px;
+  background: url(../images/bottom.png);
+}
+
+/* 推荐模块 */
+.recommend{
+    height:163px ;
+  background: #ebebeb;
+}
+.recommend .recommend-hd{
+  height: 100%;
+  width: 205px;
+  float: left;
+  text-align: center;
+  padding-top:33px;
+  background-color:  #5c5251;
+}
+.recommend .recommend-bd{
+  float: left;
+}
+.recommend-bd ul li{
+  float: left;
+
+  position: relative;
+}
+.recommend-bd ul li img{
+  width: 247px;
+  height: 163px;
+}
+.recommend-bd ul li:nth-child(-n+3)::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10px;
+  height: 145px;
+  width: 1px;
+  background: #dddddd;
+}
+
+/* 猜你喜欢模块 */
+.guess{
+  margin-top: 60px;
+  height: 235px;
+  position: relative;  
+  border:1px solid #ededed;
+
+}
+.guess::before{
+  content: '猜你喜欢';
+  position: absolute;
+  top:-30px;
+  left: 0;
+  font-size: 18px;
+
+}
+.guess::after{
+  content: '换一批  \ea2e';
+  position: absolute;
+  top:-30px;
+  right: 0;
+  font-size: 12px;
+  font-family: icomoon;
+}
+.guess ul{
+  width: 1202px;
+}
+.guess ul li{
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+.guess ul li>.img{
+  height: 162px;
+  line-height: 162px;
+}
+.guess ul li p{
+  width: 130px;
+  margin-left: 35px;
+  height: 40px;
+  font-size: 12px;
+  color: #666666;
+}
+.guess ul li h4{
+  font-size: 21px;
+  color:#df3033;
+}
+
+/* 楼层区域 */
+.floor{
+  margin-top:30px;
+}
+.household .box_hd{
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 2px solid #c81623;
+}
+.household h3{
+  float: left;
+  font-size: 18px;
+  color: #c81623;
+  font-weight: 400;
+  
+}
+.household ul li{
+  float: right;
+  margin-left:15px;
+
+}
+.household .box_bd{
+  height: 361px;
+
+}
+
+.tab-list-item>div{
+  float: left;
+  height: 361px;
+
+}
+
+.div1{
+  width: 210px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.div1 ul li{
+  float: left;
+  width: 85px;
+  height: 50px;
+  margin: 0 10px;
+  font-size: 14px;
+  color:#666666;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+}
+.div1 p:first-of-type{
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.div2{
+  width: 330px;
+  background-color: #aed6d8;
+  text-align: center;
+  position: relative;
+  
+}
+.div2>img{
+ 
+  width: 330px;
+  height: 100%;
+}
+.div2 ul{
+  position: absolute;
+  bottom: 0;
+}
+.div2>ul li{
+  width: 10px;
+  height: 10px;
+  float: left;
+  border-radius: 50%;
+  background-color: #3e3e3e;
+}
+.div2>ul li:first-of-type{
+  background-color: white;
+}
+.tab-list-item>div:nth-of-type(n+3){
+ 
+  width: 220px;
+}
+.div3,.div5{
+  margin-top:25px;
+  text-align: center;
+  border-right: 1px solid #ededed;
+}
+.div3 >.div3-header,.div5-header{
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 23px;
+}
+.div4{
+  border-right: 1px solid #ededed;
+  text-align: center;
+}
+.div4>.div4-header{
+  border-bottom: 1px solid #ededed;
+  margin-top:70px;
+}
+
